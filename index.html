@@ -7,7 +7,7 @@ title: Index
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p class="author">
-    <span class="date">{{ post.date | date_to_long_string}}</span>
+    <i class="icon-calendar"></i> <span class="date">{{ post.date | date_to_long_string}}</span>
   </p>
   <div class="content">
     {{ post.content }}
