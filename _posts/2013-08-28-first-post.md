@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First post
+description: This is my first blog post.
 ---
 Here we go!
 
