@@ -135,32 +135,32 @@ aside#sidebar p.repo-owner a {
 }
 
 a.button {
-  width: 134px;
-  height: 58px;
+  width: 170px;
+  height: 67px;
   line-height: 1.2;
   font-size: 23px;
   color: #fff;
-  padding-left: 68px;
-  padding-top: 22px;
+  padding-left: 32px;
+  padding-top: 12px;
   font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, serif;
 }
 a.button small {
+  padding-top: 10px;
   display: block;
   font-size: 11px;
 }
+a.button i {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  font-size: 60px;
+}
+
 header a.button {
   position: absolute;
   right: 0;
   top: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
-}
-aside a.button {
-  width: 138px;
-  padding-left: 64px;
-  display: block;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
-  margin-bottom: 20px;
-  font-size: 21px;
 }
 
 code, pre {
@@ -441,16 +441,21 @@ footer a:hover {
     text-align: center;
     font-size: 13px;
     line-height: 1;
-    background-color: #65dfff;
+    background-color: #fff;
     color: #2879d0;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
   header a.button small {
-    font-size: 13px;
+    font-size: inherit;
     display: inline;
   }
+  header a.button i {
+    font-size: inherit;
+    display: inline;
+  }
+
   #main-content,
   aside#sidebar {
     float: none;
