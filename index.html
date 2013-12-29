@@ -5,13 +5,22 @@ title: Index
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <i class="icon-calendar"></i> <span class="date">{{ post.date | date_to_long_string}}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
+  <section>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="author">
+      <i class="icon-calendar"></i> <span class="date">{{ post.date | date_to_long_string}}</span>
+    </p>
+    <div class="content">
+      {% if post.content contains "<!-- more -->" %}
+        <!-- Post content untill read-more-separator -->
+        {{ post.content | split:"<!-- more -->" | first % }}
+      {% else %}
+        <!-- First 100 words in post content if no read-more-separator is present -->
+        {{ post.content |  truncatewords:100 }}
+      {% endif %}
+      <p><a href="{{ post.url }}">Read full post &raquo;</a></p>
+    </div>
+  </section>
   <hr />
 {% endfor %}
 
