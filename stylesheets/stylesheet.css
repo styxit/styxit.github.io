@@ -356,6 +356,10 @@ ol li {
   padding-left: 3px;
 }
 
+aside#sidebar li {
+  padding-left: 0px;
+}
+
 dl dd {
   font-style: italic;
   font-weight: 100;
