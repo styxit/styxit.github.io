@@ -5,3 +5,6 @@ email: info@styxit.com
 name: Styxit blog
 description: A weblog about coding, internet, opensource, php, cakephp, pyhon and my project HTPC-Manager. Probably also some other subjects.
 url: http://styxit.github.io
+
+disqus:
+  shortname: styxitblog
