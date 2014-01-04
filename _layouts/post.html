@@ -14,6 +14,20 @@
           <p><i class="icon-calendar"></i> {{page.date | date_to_long_string}}</p>
           {{ content }}
           <hr>
+
+          <div id="post-paginator">
+            {% if page.next %}
+              <a href="{{page.next.url}}" title="Next post: {{page.next.title}}" clas="pull-left">
+                <i class="icon-circle-arrow-left"></i> Next: {{page.next.title}}
+              </a>
+            {% endif %}
+            {% if page.previous %}
+              <a href="{{page.previous.url}}" title="Previous post: {{page.previous.title}}" class="pull-right">
+                Previous: {{page.previous.title}} <i class="icon-circle-arrow-right"></i>
+              </a>
+            {% endif %}
+          </div>
+
           {% include disqus.html %}
         </section>
 

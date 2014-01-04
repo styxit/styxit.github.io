@@ -320,6 +320,12 @@ h5:before {
   font-size: .8em;
   color: #474747;
 }
+
+#main-content #post-paginator {
+  display: block;
+  height: 45px;
+}
+
 h6:before {
   content: "//////";
   color: #094e95;
