@@ -8,17 +8,17 @@ description: Recieve Synology push notifications using Pushover.
 Recently I became the owner of a [Synology DS214+](http://www.synology.com/nl-nl/products/overview/DS214+). Since my HTPC was running out of space and consuming a lot of power, a Nas with lots of storage seemed right. It was all self explanatory and after some reseach i was able to get NZBget, Sickbeard, Couchpotato and [HTPC-Manager](http://htpc.io) running exacly the way i wanted. Next i wanted Pushover notifications!
 <!-- more -->
 
-In DSM5 (the Synology controlpanel) there are a lot of options to configure and play-around with. One of these nice options is are the notifications. After a secific event, you can recieve a notification. Event examples: `Backup to remote volume failed`,  `Overheating shutdown`, ` Disk I/O error` etcetera. Some of these things might be important to you so you want to know what's going on right away.
+In DSM5 (the Synology controlpanel) there are a lot of options to configure and play-around with. One of these nice options is notifications. After a specific event, you can recieve a notification. Event examples: `Backup to remote volume failed`,  `Overheating shutdown`, ` Disk I/O error` etcetera. Some of these things might be important to you so you want to know what's going on right away.
 
 The notification methods Synology has buildt-in to notify you are; email, sms, msn, skype and phone push notifications using the DsFinder app for your phone. For me, the msn, skype and sms methods were not interesting. (I don't use skype or msn on my phone and I think sms is just out-dated) I want to recieve notifications on my phone via push. The Synology Android/IOS app can do this, but the fact that i need to install a specific app for it was a no-go.
 
-At the moment [Pushover](http://pushover.net) is popular way to recieve notifications on your mobile device(s) and can be used by many applications. I already have Sickbeard, Couchpotato and some work related stuff send to me through Pushover. I had really hoped Synology would also support this, but no.
+At the moment [Pushover](http://pushover.net) is a popular application to recieve notifications on your mobile device(s) and can be used by many third party applications. I already have Sickbeard, Couchpotato and some work related stuff send messages to me through Pushover. I had really hoped Synology would also support this, but no.
 
 ## Time to get my hands dirty
 ![Pushover on android](/images/pushover-screenshot.png){: .pull-right}
-I wanted to find a way to Let the Synology send my push messages to pushover. This quest started by looking into the synology code. As far as i know there is not sourcecode available so i had to do some searching. I ssh'ed into the synology and just look at all the files is could find that looked like they had to do something with the notifications. I quit pretty soon. The source is all binaries and i could not really make anything of it, except for the webinterface code, but that was not what i was looking for.
+I wanted to find a way to Let the Synology send my push messages to pushover. This quest started by looking into the synology code. As far as i know there is no sourcecode available so i had to do some searching. I ssh'ed into the synology and just looked at all the files is could find that looked like they had to do something with the notifications. I quit pretty soon. The source is all binaries and i could not really make anything of it, except for the webinterface code, but that was not what i was looking for.
 
-The solotion i came up with was actually very easy, i just didn't look in the right place. It turned out, the SMS service was my saviour. In the `Notification -> SMS` section there is a button to add you own sms service. This is nothing more than an url with some parameters that recieve the notification message allong with the login details for the sms service. The host for this sms service, along with the parameters, can completely be customized. So i descided to write my own sms-service, but instead of sending me an sms, is sends me a Pushover notification.
+The solotion i came up with was actually very easy, i just didn't look in the right place. It turned out, the SMS service was my saviour. In the `Notification -> SMS` section there is a button to add you own sms service. This is nothing more than an url with some parameters that recieve the notification message along with the login details for the sms service. The host for this sms service, including the parameters, can completely be customized. So i descided to write my own sms-service, but instead of sending me an sms, is sends me a Pushover notification.
 
 ## Do it yourself (configuration)
 
@@ -71,7 +71,7 @@ You now created a custom sms provide, pointing to the pushover script at you loc
 
 If all went well, you have recieved a notification on your Pushover device.
 
-In the advanced-tab you can configure wich event notifys which service. Check the sms box to enable/disable pushover for a spscific event. (I checked them all)
+In the advanced-tab you can configure wich event notifies which service. Check the sms box to enable/disable pushover for a spscific event. (I checked them all)
 
 ## Conclusion
 Adding Pushover to Synology was not difficult. Maybe this is something for the next DSM update for the people of Synology to look at.
