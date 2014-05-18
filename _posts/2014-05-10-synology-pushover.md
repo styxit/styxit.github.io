@@ -8,7 +8,7 @@ description: Recieve Synology push notifications using Pushover.
 Recently I became the owner of a [Synology DS214+](http://www.synology.com/nl-nl/products/overview/DS214+). Since my HTPC was running out of space and consuming a lot of power, a Nas with lots of storage seemed right. It was all self explanatory and after some reseach i was able to get NZBget, Sickbeard, Couchpotato and [HTPC-Manager](http://htpc.io) running exacly the way i wanted. Next i wanted Pushover notifications!
 <!-- more -->
 
-In DSM5 (the Synology controlpanel) there are a lot of options to configure and play-around with. One of these nice options is notifications. After a specific event, you can recieve a notification. Event examples: `Backup to remote volume failed`,  `Overheating shutdown`, ` Disk I/O error` etcetera. Some of these things might be important to you so you want to know what's going on right away.
+In DSM5 (the Synology controlpanel) there are a lot of options to configure and play-around with. One of these nice options is notifications. After a specific event, you can recieve a notification. Event examples: `Backup to remote volume failed`, `Overheating shutdown`, `Disk IO error` etcetera. Some of these things might be important to you so you want to know what's going on right away.
 
 The notification methods Synology has buildt-in to notify you are; email, sms, msn, skype and phone push notifications using the DsFinder app for your phone. For me, the msn, skype and sms methods were not interesting. (I don't use skype or msn on my phone and I think sms is just out-dated) I want to recieve notifications on my phone via push. The Synology Android/IOS app can do this, but the fact that i need to install a specific app for it was a no-go.
 
@@ -24,7 +24,7 @@ The solotion i came up with was actually very easy, i just didn't look in the ri
 
 >If you do not have a Pushover account and/or the Pushover App installed on your device, this guide is probably not usefull to you.
 
-I wrote a tiny php script that handles the http request from Synology and transfers it into a Pushover notification. 
+I wrote a tiny php script that handles the http request from Synology and transfers it into a Pushover notification.
 
 ### Register Pushover application
 I assume you already have a pushover account and the pushover app installed on your mobile device. To get a Pushover Application API key, you need to create a new application at [pushover.net](pushover.net). Just login and "Register new application".
