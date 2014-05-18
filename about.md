@@ -18,6 +18,7 @@ Since 2013 i am working on [HTPC-Manager](http://htpc.io), an opensource project
 I am currently employed at [Exonet](http://www.exonet.nl), a Dutch hosting provider. In the past i worked at several companies, all involved in or in some way related to webdevelopment. Besides that i ran my own webdevelopment and consultancy business.
 
 ![Styxit logo](https://en.gravatar.com/avatar/1865f4f4c943819629c67dc60f126e7e?s=100){: .pull-right}
+
 ## Find me on:
 - [Twitter](https://twitter.com/styxit)
 - [Github](https://github.com/styxit)
