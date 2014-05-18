@@ -94,6 +94,20 @@ header h2 {
   width: 540px;
   letter-spacing: 0;
 }
+header img {
+  margin: 5px;
+  max-width: 100%;
+  display: inline-block;
+  height: auto;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius:50%;
+  position: absolute;
+  top: -10px;
+  left: -105px;
+}
+
 
 .inner {
   position: relative;
@@ -404,7 +418,11 @@ footer a:hover {
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
+@media only screen and (max-width: 959px) {
+  header img {
+    display: none;
+  }
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
