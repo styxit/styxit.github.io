@@ -7,7 +7,7 @@ description: Who am i?
 # About me - Styxit
 
 ![Styxit personal](https://en.gravatar.com/avatar/91adfbdc92f75b09460b9600674dd663?s=200){: .pull-right}
-My name is Floris, online known as Styxit. I live in the Netherlands. I like [coding](https://github.com/styxit), playing [games](http://psnprofiles.com/styxit) and ejnoy rock- and metal related [music](http://www.last.fm/user/twenty-2-choke).
+My name is Floris, online known as Styxit. I live in the Netherlands. I like [coding](https://github.com/styxit), playing [games](http://psnprofiles.com/styxit) and enjoy rock- and metal related [music](http://www.last.fm/user/twenty-2-choke).
 
 I am a big fan of [CakePHP](http://cakephp.org/) and have used it for most of the websites i created. For this blog i wanted something new and went with [Jekyll](http://jekyllrb.com/) and [Github pages](http://pages.github.com/).
 
