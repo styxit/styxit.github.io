@@ -51,6 +51,7 @@ http://localhost/synology-pushover.php?userkey=username&appkey=pwd&to=1234&text=
 {% endhighlight %}
 
 **3.** In the next step, you tell Synology what variables to use and what they mean. Use the following:
+
 * userkey=username -> Username
 * appkey=pwd -> Password
 * to=1234 -> Phone number
@@ -59,9 +60,10 @@ http://localhost/synology-pushover.php?userkey=username&appkey=pwd&to=1234&text=
 You now created a custom sms provide, pointing to the pushover script at you local webserver.
 
 **4.** Obtain your pushover api keys and enter these in the sms server username and password fields.
-  - `Username` Your pushover user-key. Can be found on [https://pushover.net](https://pushover.net) (on the right).
-  - `Password` The Pushover API Token for the Synology app you created.
-  - `Confirm password` Again the Pushover API Token for the Synology app you created.
+
+- `Username` Your pushover user-key. Can be found on [https://pushover.net](https://pushover.net) (on the right).
+- `Password` The Pushover API Token for the Synology app you created.
+- `Confirm password` Again the Pushover API Token for the Synology app you created.
 
 **5.** Since this was originally an sms provider, you must configure atleast a primary phone number. Although, it will not be used to send sms.
 
