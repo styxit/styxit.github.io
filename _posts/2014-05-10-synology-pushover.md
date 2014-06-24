@@ -4,7 +4,7 @@ title: Synology Pushover notifications
 description: Recieve Synology push notifications using Pushover.
 ---
 
-![Synology logo](http://i.imgur.com/ltwAj3G.png){: .pull-right}
+![Synology logo](https://i.imgur.com/ltwAj3G.png){: .pull-right}
 Recently I became the owner of a [Synology DS214+](http://www.synology.com/nl-nl/products/overview/DS214+). Since my HTPC was running out of space and consuming a lot of power, a Nas with lots of storage seemed right. It was all self explanatory and after some reseach i was able to get NZBget, Sickbeard, Couchpotato and [HTPC-Manager](http://htpc.io) running exacly the way i wanted. Next i wanted Pushover notifications!
 <!-- more -->
 
