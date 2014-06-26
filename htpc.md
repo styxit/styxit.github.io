@@ -15,4 +15,4 @@ It is written in Python and uses [Twitter Bootstrap](http://getbootstrap.com) fo
 Head over to the website and find out more about Htpc Manager at <http://htpc.io>
 
 
-![htpc manager screenshot](/HTPC-Manager/img/screenshots/dashboard.png)
+![htpc manager screenshot](http://htpc.io/img/screenshots/dashboard.png)
