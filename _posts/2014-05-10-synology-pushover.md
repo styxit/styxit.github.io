@@ -27,7 +27,7 @@ The solotion i came up with was actually very easy, i just didn't look in the ri
 I wrote a tiny php script that handles the http request from Synology and transfers it into a Pushover notification.
 
 ### Register Pushover application
-I assume you already have a pushover account and the pushover app installed on your mobile device. To get a Pushover Application API key, you need to create a new application at [pushover.net](pushover.net). Just login and "Register new application".
+I assume you already have a pushover account and the pushover app installed on your mobile device. To get a Pushover Application API key, you need to create a new application at [pushover.net](http://pushover.net). Just login and "Register new application".
 
 Most fields can be left blank, use `Synology` or `DiskStation` as the application title and upload an icon you like and hit "Create application" [I used this icon.](http://i.imgur.com/uPaCgDN.png)
 
