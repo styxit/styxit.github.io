@@ -1,6 +1,14 @@
 
 gems:
   - jekyll-paginate
+  
+exclude:
+  - CNAME
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - params.json
+  - vendor
 
 # Use kramdown as markdown parser
 # http://kramdown.gettalong.org
