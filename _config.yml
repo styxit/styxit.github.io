@@ -1,7 +1,7 @@
 
 gems:
   - jekyll-paginate
-  
+
 exclude:
   - CNAME
   - README.md
@@ -20,7 +20,7 @@ paginate: 4
 email: info@styxit.com
 
 name: Styxit blog
-description: A weblog about coding, internet, opensource, php, cakephp, pyhon and my project HTPC-Manager. Probably also some other subjects.
+description: A weblog about coding, internet, opensource, php, cakephp, python, raspberry pi and my project HTPC-Manager. Probably also some other subjects.
 url: http://styxit.github.io
 
 disqus:
