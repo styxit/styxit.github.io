@@ -1,2 +1,11 @@
+# Exclude ruby rem lockfile
+Gemfile.lock
+
+# Ignore the compiled pages.
 _site/
+
+# Ignore any draft posts.
 _drafts/
+
+# Ignore dependencies in vendor dir.
+vendor/
