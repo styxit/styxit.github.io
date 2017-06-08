@@ -16,7 +16,7 @@ title: Index
         {{ post.content | split:"<!-- more -->" | first }}
       {% else %}
         <!-- First 100 words in post content if no read-more-separator is present -->
-        {{ post.content |  truncatewords:100 }}
+        {{ post.content | truncatewords:100 }}
       {% endif %}
       <p><a href="{{ post.url }}">Read full post &raquo;</a></p>
     </div>
