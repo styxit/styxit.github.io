@@ -13,7 +13,7 @@ title: Index
     <div class="content">
       {% if post.content contains "<!-- more -->" %}
         <!-- Post content untill read-more-separator -->
-        {{ post.content | split:"<!-- more -->" | first % }}
+        {{ post.content | split:"<!-- more -->" | first }}
       {% else %}
         <!-- First 100 words in post content if no read-more-separator is present -->
         {{ post.content |  truncatewords:100 }}
