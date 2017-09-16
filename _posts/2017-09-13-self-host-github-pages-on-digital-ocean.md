@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Self-hosted your GitHub pages
+title: Self-hosted GitHub pages
 description: How to deploy your GitHub pages website to your own Digital Ocean server
 ---
 
