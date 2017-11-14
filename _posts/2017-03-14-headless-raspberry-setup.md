@@ -55,6 +55,7 @@ $ nano wpa_supplicant.conf
 Paste the following content in the `wpa_supplicant.conf` file, adjust it with your wifi details and save it with `ctrl + x`. Make sure you pick the configuration that matches your Raspbian version.
 
 For Raspbian Jessie:
+
 ```
 network={
     ssid="YOUR_SSID"
@@ -64,6 +65,7 @@ network={
 ```
 
 For Raspbian Stretch and later:
+
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
