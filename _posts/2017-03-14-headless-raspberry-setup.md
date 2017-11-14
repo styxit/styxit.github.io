@@ -52,12 +52,24 @@ To make the Pi connect to your Wifi access point at first boot, store the wifi c
 $ nano wpa_supplicant.conf
 {% endhighlight %}
 
-Paste the following content in the `wpa_supplicant.conf` file, adjust it with your wifi details and save it with `ctrl + x`.
+Paste the following content in the `wpa_supplicant.conf` file, adjust it with your wifi details and save it with `ctrl + x`. Make sure you pick the configuration that matches your Raspbian version.
 
+For Raspbian Jessie:
 ```
 network={
     ssid="YOUR_SSID"
     psk="YOUR_WIFI_PASSWORD"
+    key_mgmt=WPA-PSK
+}
+```
+
+For Raspbian Stretch and later:
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="YOUR_SSID"
+    psk="YOUR_WIFI_PASSWORD"
+    key_mgmt=WPA-PSK
 }
 ```
 
