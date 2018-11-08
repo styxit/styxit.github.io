@@ -4,7 +4,7 @@ title: Headless Raspberry Pi setup with wifi
 description: How to setup a Raspberry Pi, connected to your network over wifi
 ---
 
-Once in a while want to setup a new Raspberry Pi without the need to connect it to a display, keyboard or ethernet cable. The [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) and [the recently introduced Raspberry Pi Zero W](https://www.raspberrypi.org/products/pi-zero-wireless/) have an onboard wifi chip. This means it can run and connect to the internet without having an ethernet cable connected to it. I wrote this article mainly for myself so i can reproduce the steps, but figured this is probably useful to others.
+Once in a while i want to setup a new Raspberry Pi without the need to connect it to a display, keyboard or ethernet cable. The [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) and [the recently introduced Raspberry Pi Zero W](https://www.raspberrypi.org/products/pi-zero-wireless/) have an onboard wifi chip. This means it can run and connect to the internet without having an ethernet cable connected to it. I wrote this article mainly for myself so i can reproduce the steps, but figured this is probably useful to others.
 
 <!-- more -->
 
